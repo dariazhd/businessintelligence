@@ -1,0 +1,241 @@
+CUSTOMER;CUSTOMERDESCR;CITY;SALESORG;SALESORGDESCR;COUNTRY;CHANGEDATE
+1000;Rocky Mountain Bikes_2013;Denver City;UW00;USAWest_2013;US;01.01.2013
+10000;Silicon Valley Bikes_2013;San Francisco;UW00;USAWest_2013;US;01.01.2013
+11000;DC Bikes_2013;Washington, D.C.;UE00;USAEast_2013;US;01.01.2013
+12000;Northwest Bikes_2013;Seattle;UW00;USAWest_2013;US;01.01.2013
+13000;Airport Bikes_2013;Frankfurt;DS00;DeutschlandSüd_2013;DE;01.01.2013
+14000;Alster MotorCycling_2013;Hamburg;DN00;DeutschlandNord_2013;DE;01.01.2013
+15000;Bavaria Bikes_2013;München;DS00;DeutschlandSüd_2013;DE;01.01.2013
+16000;Capital Bikes_2013;Berlin;DN00;DeutschlandNord_2013;DE;01.01.2013
+17000;Cruiser Bikes_2013;Hannover;DN00;DeutschlandNord_2013;DE;01.01.2013
+18000;LMotortours_2013;Leipzig;DN00;DeutschlandNord_2013;DE;01.01.2013
+19000;Fahrpott_2013;Bochum;DN00;DeutschlandNord_2013;DE;01.01.2013
+2000;Big Apple Bikes_2013;New York;UE00;USAEast_2013;US;01.01.2013
+20000;Neckarmotorrad_2013;Heidelberg;DS00;DeutschlandSüd_2013;DE;01.01.2013
+21000;Ostseemotorrad_2013;Greifswald;DN00;DeutschlandNord_2013;DE;01.01.2013
+22000;Motoradland_2013;Stuttgart;DS00;DeutschlandSüd_2013;DE;01.01.2013
+23000;Red Light Bikes_2013;Hamburg;DN00;DeutschlandNord_2013;DE;01.01.2013
+24000;Motodrom_2013;Magdeburg;DN00;DeutschlandNord_2013;DE;01.01.2013
+3000;Philly Bikes_2013;Texas City;UE00;USAEast_2013;US;01.01.2013
+4000;Peachtree Bikes_2013;Miami Beach;UE00;USAEast_2013;US;01.01.2013
+5000;Beantown Bikes_2013;Boston Heights;UE00;USAEast_2013;US;01.01.2013
+6000;Windy City Bikes_2013;Chicago;UE00;USAEast_2013;US;01.01.2013
+7000;Furniture City Bikes_2013;Indianapolis;UE00;USAEast_2013;US;01.01.2013
+8000;Motown Bikes_2013;Detroit Lakes;UE00;USAEast_2013;US;01.01.2013
+9000;SoCal Bikes_2013;Los Angeles;UW00;USAWest_2013;US;01.01.2013
+1000;Rocky Mountain Bikes_2014;Denver City;UW00;USAWest_2014;US;01.01.2014
+10000;Silicon Valley Bikes_2014;San Francisco;UW00;USAWest_2014;US;01.01.2014
+11000;DC Bikes_2014;Washington, D.C.;UE00;USAEast_2014;US;01.01.2014
+12000;Northwest Bikes_2014;Seattle;UW00;USAWest_2014;US;01.01.2014
+13000;Airport Bikes_2014;Frankfurt;DS00;DeutschlandSüd_2014;DE;01.01.2014
+14000;Alster MotorCycling_2014;Hamburg;DN00;DeutschlandNord_2014;DE;01.01.2014
+15000;Bavaria Bikes_2014;München;DS00;DeutschlandSüd_2014;DE;01.01.2014
+16000;Capital Bikes_2014;Berlin;DN00;DeutschlandNord_2014;DE;01.01.2014
+17000;Cruiser Bikes_2014;Hannover;DN00;DeutschlandNord_2014;DE;01.01.2014
+18000;LMotortours_2014;Leipzig;DN00;DeutschlandNord_2014;DE;01.01.2014
+19000;Fahrpott_2014;Bochum;DN00;DeutschlandNord_2014;DE;01.01.2014
+2000;Big Apple Bikes_2014;New York;UE00;USAEast_2014;US;01.01.2014
+20000;Neckarmotorrad_2014;Heidelberg;DS00;DeutschlandSüd_2014;DE;01.01.2014
+21000;Ostseemotorrad_2014;Greifswald;DN00;DeutschlandNord_2014;DE;01.01.2014
+22000;Motoradland_2014;Stuttgart;DS00;DeutschlandSüd_2014;DE;01.01.2014
+23000;Red Light Bikes_2014;Hamburg;DN00;DeutschlandNord_2014;DE;01.01.2014
+24000;Motodrom_2014;Magdeburg;DN00;DeutschlandNord_2014;DE;01.01.2014
+3000;Philly Bikes_2014;Texas City;UE00;USAEast_2014;US;01.01.2014
+4000;Peachtree Bikes_2014;Miami Beach;UE00;USAEast_2014;US;01.01.2014
+5000;Beantown Bikes_2014;Boston Heights;UE00;USAEast_2014;US;01.01.2014
+6000;Windy City Bikes_2014;Chicago;UE00;USAEast_2014;US;01.01.2014
+7000;Furniture City Bikes_2014;Indianapolis;UE00;USAEast_2014;US;01.01.2014
+8000;Motown Bikes_2014;Detroit Lakes;UE00;USAEast_2014;US;01.01.2014
+9000;SoCal Bikes_2014;Los Angeles;UW00;USAWest_2014;US;01.01.2014
+1000;Rocky Mountain Bikes_2015;Denver City;UW00;USAWest_2015;US;01.01.2015
+10000;Silicon Valley Bikes_2015;San Francisco;UW00;USAWest_2015;US;01.01.2015
+11000;DC Bikes_2015;Washington, D.C.;UE00;USAEast_2015;US;01.01.2015
+12000;Northwest Bikes_2015;Seattle;UW00;USAWest_2015;US;01.01.2015
+13000;Airport Bikes_2015;Frankfurt;D00;DeutschlandGesamt_2015;DE;01.01.2015
+14000;Alster MotorCycling_2015;Hamburg;D00;DeutschlandGesamt_2015;DE;01.01.2015
+15000;Bavaria Bikes_2015;München;D00;DeutschlandGesamt_2015;DE;01.01.2015
+16000;Capital Bikes_2015;Berlin;D00;DeutschlandGesamt_2015;DE;01.01.2015
+17000;Cruiser Bikes_2015;Hannover;D00;DeutschlandGesamt_2015;DE;01.01.2015
+18000;LMotortours_2015;Leipzig;D00;DeutschlandGesamt_2015;DE;01.01.2015
+19000;Fahrpott_2015;Bochum;D00;DeutschlandGesamt_2015;DE;01.01.2015
+2000;Big Apple Bikes_2015;New York;UE00;USAEast_2015;US;01.01.2015
+20000;Neckarmotorrad_2015;Heidelberg;D00;DeutschlandGesamt_2015;DE;01.01.2015
+21000;Ostseemotorrad_2015;Greifswald;D00;DeutschlandGesamt_2015;DE;01.01.2015
+22000;Motoradland_2015;Stuttgart;D00;DeutschlandGesamt_2015;DE;01.01.2015
+23000;Red Light Bikes_2015;Hamburg;D00;DeutschlandGesamt_2015;DE;01.01.2015
+24000;Motodrom_2015;Magdeburg;D00;DeutschlandGesamt_2015;DE;01.01.2015
+3000;Philly Bikes_2015;Texas City;UE00;USAEast_2015;US;01.01.2015
+4000;Peachtree Bikes_2015;Miami Beach;UE00;USAEast_2015;US;01.01.2015
+5000;Beantown Bikes_2015;Boston Heights;UE00;USAEast_2015;US;01.01.2015
+6000;Windy City Bikes_2015;Chicago;UE00;USAEast_2015;US;01.01.2015
+7000;Furniture City Bikes_2015;Indianapolis;UE00;USAEast_2015;US;01.01.2015
+8000;Motown Bikes_2015;Detroit Lakes;UE00;USAEast_2015;US;01.01.2015
+9000;SoCal Bikes_2015;Los Angeles;UW00;USAWest_2015;US;01.01.2015
+1000;Rocky Mountain Bikes_2016;Denver City;UW00;USAWest_2016;US;01.01.2016
+10000;Silicon Valley Bikes_2016;San Francisco;UW00;USAWest_2016;US;01.01.2016
+11000;DC Bikes_2016;Washington, D.C.;UE00;USAEast_2016;US;01.01.2016
+12000;Northwest Bikes_2016;Seattle;UW00;USAWest_2016;US;01.01.2016
+13000;Airport Bikes_2016;Frankfurt;DS00;DeutschlandSüd_2016;DE;01.01.2016
+14000;Alster MotorCycling_2016;Hamburg;DN00;DeutschlandNord_2016;DE;01.01.2016
+15000;Bavaria Bikes_2016;München;DS00;DeutschlandSüd_2016;DE;01.01.2016
+16000;Capital Bikes_2016;Berlin;DN00;DeutschlandNord_2016;DE;01.01.2016
+17000;Cruiser Bikes_2016;Hannover;DN00;DeutschlandNord_2016;DE;01.01.2016
+18000;LMotortours_2016;Leipzig;DN00;DeutschlandNord_2016;DE;01.01.2016
+19000;Fahrpott_2016;Bochum;DN00;DeutschlandNord_2016;DE;01.01.2016
+2000;Big Apple Bikes_2016;New York;UE00;USAEast_2016;US;01.01.2016
+20000;Neckarmotorrad_2016;Heidelberg;DS00;DeutschlandSüd_2016;DE;01.01.2016
+21000;Ostseemotorrad_2016;Greifswald;DN00;DeutschlandNord_2016;DE;01.01.2016
+22000;Motoradland_2016;Stuttgart;DS00;DeutschlandSüd_2016;DE;01.01.2016
+23000;Red Light Bikes_2016;Hamburg;DN00;DeutschlandNord_2016;DE;01.01.2016
+24000;Motodrom_2016;Magdeburg;DN00;DeutschlandNord_2016;DE;01.01.2016
+3000;Philly Bikes_2016;Texas City;UE00;USAEast_2016;US;01.01.2016
+4000;Peachtree Bikes_2016;Miami Beach;UE00;USAEast_2016;US;01.01.2016
+5000;Beantown Bikes_2016;Boston Heights;UE00;USAEast_2016;US;01.01.2016
+6000;Windy City Bikes_2016;Chicago;UE00;USAEast_2016;US;01.01.2016
+7000;Furniture City Bikes_2016;Indianapolis;UE00;USAEast_2016;US;01.01.2016
+8000;Motown Bikes_2016;Detroit Lakes;UE00;USAEast_2016;US;01.01.2016
+9000;SoCal Bikes_2016;Los Angeles;UW00;USAWest_2016;US;01.01.2016
+1000;Rocky Mountain Bikes_2017;Denver City;UW00;USAWest_2017;US;01.01.2017
+10000;Silicon Valley Bikes_2017;San Francisco;UW00;USAWest_2017;US;01.01.2017
+11000;DC Bikes_2017;Washington, D.C.;UE00;USAEast_2017;US;01.01.2017
+12000;Northwest Bikes_2017;Seattle;UW00;USAWest_2017;US;01.01.2017
+13000;Airport Bikes_2017;Frankfurt;DS00;DeutschlandSüd_2017;DE;01.01.2017
+14000;Alster MotorCycling_2017;Hamburg;DN00;DeutschlandNord_2017;DE;01.01.2017
+15000;Bavaria Bikes_2017;München;DS00;DeutschlandSüd_2017;DE;01.01.2017
+16000;Capital Bikes_2017;Berlin;DN00;DeutschlandNord_2017;DE;01.01.2017
+17000;Cruiser Bikes_2017;Hannover;DN00;DeutschlandNord_2017;DE;01.01.2017
+18000;LMotortours_2017;Leipzig;DN00;DeutschlandNord_2017;DE;01.01.2017
+19000;Fahrpott_2017;Bochum;DN00;DeutschlandNord_2017;DE;01.01.2017
+2000;Big Apple Bikes_2017;New York;UE00;USAEast_2017;US;01.01.2017
+20000;Neckarmotorrad_2017;Heidelberg;DS00;DeutschlandSüd_2017;DE;01.01.2017
+21000;Ostseemotorrad_2017;Greifswald;DN00;DeutschlandNord_2017;DE;01.01.2017
+22000;Motoradland_2017;Stuttgart;DS00;DeutschlandSüd_2017;DE;01.01.2017
+23000;Red Light Bikes_2017;Hamburg;DN00;DeutschlandNord_2017;DE;01.01.2017
+24000;Motodrom_2017;Magdeburg;DN00;DeutschlandNord_2017;DE;01.01.2017
+3000;Philly Bikes_2017;Texas City;UE00;USAEast_2017;US;01.01.2017
+4000;Peachtree Bikes_2017;Miami Beach;UE00;USAEast_2017;US;01.01.2017
+5000;Beantown Bikes_2017;Boston Heights;UE00;USAEast_2017;US;01.01.2017
+6000;Windy City Bikes_2017;Chicago;UE00;USAEast_2017;US;01.01.2017
+7000;Furniture City Bikes_2017;Indianapolis;UE00;USAEast_2017;US;01.01.2017
+8000;Motown Bikes_2017;Detroit Lakes;UE00;USAEast_2017;US;01.01.2017
+9000;SoCal Bikes_2017;Los Angeles;UW00;USAWest_2017;US;01.01.2017
+1000;Rocky Mountain Bikes_2018;Denver City;UW00;USAWest_2018;US;01.01.2018
+10000;Silicon Valley Bikes_2018;San Francisco;UW00;USAWest_2018;US;01.01.2018
+11000;DC Bikes_2018;Washington, D.C.;UE00;USAEast_2018;US;01.01.2018
+12000;Northwest Bikes_2018;Seattle;UW00;USAWest_2018;US;01.01.2018
+13000;Airport Bikes_2018;Frankfurt;DS00;DeutschlandSüd_2018;DE;01.01.2018
+14000;Alster MotorCycling_2018;Hamburg;DN00;DeutschlandNord_2018;DE;01.01.2018
+15000;Bavaria Bikes_2018;München;DS00;DeutschlandSüd_2018;DE;01.01.2018
+16000;Capital Bikes_2018;Berlin;DN00;DeutschlandNord_2018;DE;01.01.2018
+17000;Cruiser Bikes_2018;Hannover;DN00;DeutschlandNord_2018;DE;01.01.2018
+18000;LMotortours_2018;Leipzig;DN00;DeutschlandNord_2018;DE;01.01.2018
+19000;Fahrpott_2018;Bochum;DN00;DeutschlandNord_2018;DE;01.01.2018
+2000;Big Apple Bikes_2018;New York;UE00;USAEast_2018;US;01.01.2018
+20000;Neckarmotorrad_2018;Heidelberg;DS00;DeutschlandSüd_2018;DE;01.01.2018
+21000;Ostseemotorrad_2018;Greifswald;DN00;DeutschlandNord_2018;DE;01.01.2018
+22000;Motoradland_2018;Stuttgart;DS00;DeutschlandSüd_2018;DE;01.01.2018
+23000;Red Light Bikes_2018;Hamburg;DN00;DeutschlandNord_2018;DE;01.01.2018
+24000;Motodrom_2018;Magdeburg;DN00;DeutschlandNord_2018;DE;01.01.2018
+3000;Philly Bikes_2018;Texas City;UE00;USAEast_2018;US;01.01.2018
+4000;Peachtree Bikes_2018;Miami Beach;UE00;USAEast_2018;US;01.01.2018
+5000;Beantown Bikes_2018;Boston Heights;UE00;USAEast_2018;US;01.01.2018
+6000;Windy City Bikes_2018;Chicago;UE00;USAEast_2018;US;01.01.2018
+7000;Furniture City Bikes_2018;Indianapolis;UE00;USAEast_2018;US;01.01.2018
+8000;Motown Bikes_2018;Detroit Lakes;UE00;USAEast_2018;US;01.01.2018
+9000;SoCal Bikes_2018;Los Angeles;UW00;USAWest_2018;US;01.01.2018
+1000;Rocky Mountain Bikes_2019;Denver City;UW00;USAWest_2019;US;01.01.2019
+10000;Silicon Valley Bikes_2019;San Francisco;UW00;USAWest_2019;US;01.01.2019
+11000;DC Bikes_2019;Washington, D.C.;UE00;USAEast_2019;US;01.01.2019
+12000;Northwest Bikes_2019;Seattle;UW00;USAWest_2019;US;01.01.2019
+13000;Airport Bikes_2019;Frankfurt;DS00;DeutschlandSüd_2019;DE;01.01.2019
+14000;Alster MotorCycling_2019;Hamburg;DN00;DeutschlandNord_2019;DE;01.01.2019
+15000;Bavaria Bikes_2019;München;DS00;DeutschlandSüd_2019;DE;01.01.2019
+16000;Capital Bikes_2019;Berlin;DN00;DeutschlandNord_2019;DE;01.01.2019
+17000;Cruiser Bikes_2019;Hannover;DN00;DeutschlandNord_2019;DE;01.01.2019
+18000;LMotortours_2019;Leipzig;DN00;DeutschlandNord_2019;DE;01.01.2019
+19000;Fahrpott_2019;Bochum;DN00;DeutschlandNord_2019;DE;01.01.2019
+2000;Big Apple Bikes_2019;New York;UE00;USAEast_2019;US;01.01.2019
+20000;Neckarmotorrad_2019;Heidelberg;DS00;DeutschlandSüd_2019;DE;01.01.2019
+21000;Ostseemotorrad_2019;Greifswald;DN00;DeutschlandNord_2019;DE;01.01.2019
+22000;Motoradland_2019;Stuttgart;DS00;DeutschlandSüd_2019;DE;01.01.2019
+23000;Red Light Bikes_2019;Hamburg;DN00;DeutschlandNord_2019;DE;01.01.2019
+24000;Motodrom_2019;Magdeburg;DN00;DeutschlandNord_2019;DE;01.01.2019
+3000;Philly Bikes_2019;Texas City;UE00;USAEast_2019;US;01.01.2019
+4000;Peachtree Bikes_2019;Miami Beach;UE00;USAEast_2019;US;01.01.2019
+5000;Beantown Bikes_2019;Boston Heights;UE00;USAEast_2019;US;01.01.2019
+6000;Windy City Bikes_2019;Chicago;UE00;USAEast_2019;US;01.01.2019
+7000;Furniture City Bikes_2019;Indianapolis;UE00;USAEast_2019;US;01.01.2019
+8000;Motown Bikes_2019;Detroit Lakes;UE00;USAEast_2019;US;01.01.2019
+9000;SoCal Bikes_2019;Los Angeles;UW00;USAWest_2019;US;01.01.2019
+1000;Rocky Mountain Bikes_2020;Denver City;UW00;USAWest_2020;US;01.01.2020
+10000;Silicon Valley Bikes_2020;San Francisco;UW00;USAWest_2020;US;01.01.2020
+11000;DC Bikes_2020;Washington, D.C.;UE00;USAEast_2020;US;01.01.2020
+12000;Northwest Bikes_2020;Seattle;UW00;USAWest_2020;US;01.01.2020
+13000;Airport Bikes_2020;Frankfurt;DS00;DeutschlandSüd_2020;DE;01.01.2020
+14000;Alster MotorCycling_2020;Hamburg;DN00;DeutschlandNord_2020;DE;01.01.2020
+15000;Bavaria Bikes_2020;München;DS00;DeutschlandSüd_2020;DE;01.01.2020
+16000;Capital Bikes_2020;Berlin;DN00;DeutschlandNord_2020;DE;01.01.2020
+17000;Cruiser Bikes_2020;Hannover;DN00;DeutschlandNord_2020;DE;01.01.2020
+18000;LMotortours_2020;Leipzig;DN00;DeutschlandNord_2020;DE;01.01.2020
+19000;Fahrpott_2020;Bochum;DN00;DeutschlandNord_2020;DE;01.01.2020
+2000;Big Apple Bikes_2020;New York;UE00;USAEast_2020;US;01.01.2020
+20000;Neckarmotorrad_2020;Heidelberg;DS00;DeutschlandSüd_2020;DE;01.01.2020
+21000;Ostseemotorrad_2020;Greifswald;DN00;DeutschlandNord_2020;DE;01.01.2020
+22000;Motoradland_2020;Stuttgart;DS00;DeutschlandSüd_2020;DE;01.01.2020
+23000;Red Light Bikes_2020;Hamburg;DN00;DeutschlandNord_2020;DE;01.01.2020
+24000;Motodrom_2020;Magdeburg;DN00;DeutschlandNord_2020;DE;01.01.2020
+3000;Philly Bikes_2020;Texas City;UE00;USAEast_2020;US;01.01.2020
+4000;Peachtree Bikes_2020;Miami Beach;UE00;USAEast_2020;US;01.01.2020
+5000;Beantown Bikes_2020;Boston Heights;UE00;USAEast_2020;US;01.01.2020
+6000;Windy City Bikes_2020;Chicago;UE00;USAEast_2020;US;01.01.2020
+7000;Furniture City Bikes_2020;Indianapolis;UE00;USAEast_2020;US;01.01.2020
+8000;Motown Bikes_2020;Detroit Lakes;UE00;USAEast_2020;US;01.01.2020
+9000;SoCal Bikes_2020;Los Angeles;UW00;USAWest_2020;US;01.01.2020
+1000;Rocky Mountain Bikes_2021;Denver City;UW00;USAWest_2021;US;01.01.2021
+10000;Silicon Valley Bikes_2021;San Francisco;UW00;USAWest_2021;US;01.01.2021
+11000;DC Bikes_2021;Washington, D.C.;UE00;USAEast_2021;US;01.01.2021
+12000;Northwest Bikes_2021;Seattle;UW00;USAWest_2021;US;01.01.2021
+13000;Airport Bikes_2021;Frankfurt;DS00;DeutschlandSüd_2021;DE;01.01.2021
+14000;Alster MotorCycling_2021;Hamburg;DN00;DeutschlandNord_2021;DE;01.01.2021
+15000;Bavaria Bikes_2021;München;DS00;DeutschlandSüd_2021;DE;01.01.2021
+16000;Capital Bikes_2021;Berlin;DN00;DeutschlandNord_2021;DE;01.01.2021
+17000;Cruiser Bikes_2021;Hannover;DN00;DeutschlandNord_2021;DE;01.01.2021
+18000;LMotortours_2021;Leipzig;DN00;DeutschlandNord_2021;DE;01.01.2021
+19000;Fahrpott_2021;Bochum;DN00;DeutschlandNord_2021;DE;01.01.2021
+2000;Big Apple Bikes_2021;New York;UE00;USAEast_2021;US;01.01.2021
+20000;Neckarmotorrad_2021;Heidelberg;DS00;DeutschlandSüd_2021;DE;01.01.2021
+21000;Ostseemotorrad_2021;Greifswald;DN00;DeutschlandNord_2021;DE;01.01.2021
+22000;Motoradland_2021;Stuttgart;DS00;DeutschlandSüd_2021;DE;01.01.2021
+23000;Red Light Bikes_2021;Hamburg;DN00;DeutschlandNord_2021;DE;01.01.2021
+24000;Motodrom_2021;Magdeburg;DN00;DeutschlandNord_2021;DE;01.01.2021
+3000;Philly Bikes_2021;Texas City;UE00;USAEast_2021;US;01.01.2021
+4000;Peachtree Bikes_2021;Miami Beach;UE00;USAEast_2021;US;01.01.2021
+5000;Beantown Bikes_2021;Boston Heights;UE00;USAEast_2021;US;01.01.2021
+6000;Windy City Bikes_2021;Chicago;UE00;USAEast_2021;US;01.01.2021
+7000;Furniture City Bikes_2021;Indianapolis;UE00;USAEast_2021;US;01.01.2021
+8000;Motown Bikes_2021;Detroit Lakes;UE00;USAEast_2021;US;01.01.2021
+9000;SoCal Bikes_2021;Los Angeles;UW00;USAWest_2021;US;01.01.2021
+1000;Rocky Mountain Bikes;Denver City;UW00;USAWest;US;01.01.2022
+10000;Silicon Valley Bikes;San Francisco;UW00;USAWest;US;01.01.2022
+11000;DC Bikes;Washington, D.C.;UE00;USAEast;US;01.01.2022
+12000;Northwest Bikes ;Seattle;UW00;USAWest;US;01.01.2022
+13000;Airport Bikes;Frankfurt;DS00;DeutschlandSüd;DE;01.01.2022
+14000;Alster MotorCycling;Hamburg;DN00;DeutschlandNord;DE;01.01.2022
+15000;Bavaria Bikes;München;DS00;DeutschlandSüd;DE;01.01.2022
+16000;Capital Bikes;Berlin;DN00;DeutschlandNord;DE;01.01.2022
+17000;Cruiser Bikes;Hannover;DN00;DeutschlandNord;DE;01.01.2022
+18000;LMotortours;Leipzig;DN00;DeutschlandNord;DE;01.01.2022
+19000;Fahrpott;Bochum;DN00;DeutschlandNord;DE;01.01.2022
+2000;Big Apple Bikes;New York;UE00;USAEast;US;01.01.2022
+20000;Neckarmotorrad;Heidelberg;DS00;DeutschlandSüd;DE;01.01.2022
+21000;Ostseemotorrad;Greifswald;DN00;DeutschlandNord;DE;01.01.2022
+22000;Motoradland;Stuttgart;DS00;DeutschlandSüd;DE;01.01.2022
+23000;Red Light Bikes;Hamburg;DN00;DeutschlandNord;DE;01.01.2022
+24000;Motodrom;Magdeburg;DN00;DeutschlandNord;DE;01.01.2022
+3000;Philly Bikes;Texas City;UE00;USAEast;US;01.01.2022
+4000;Peachtree Bikes;Miami Beach;UE00;USAEast;US;01.01.2022
+5000;Beantown Bikes;Boston Heights;UE00;USAEast;US;01.01.2022
+6000;Windy City Bikes;Chicago;UE00;USAEast;US;01.01.2022
+7000;Furniture City Bikes;Indianapolis;UE00;USAEast;US;01.01.2022
+8000;Motown Bikes;Detroit Lakes;UE00;USAEast;US;01.01.2022
+9000;SoCal Bikes;Los Angeles;UW00;USAWest;US;01.01.2022

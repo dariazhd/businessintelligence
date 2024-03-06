@@ -1,0 +1,59 @@
+<Schema name="Starschema">
+  <Cube name="HyperCube@DirtBikes" description = "Cube for DirtBikes Sales Data" cache="true" enabled="true" visible="true">
+	<Table name="WI2_WOW167_SALESFACT" schema="DB_2631257">
+	  <AggName name="AGG_WI2_WOW167_SALESFACT" schema="DB_2631257">
+	    <AggFactCount column="FACTCOUNT"/>
+		<AggMeasure name="[Measures].[NOOFSALESORDERS]" column="NOOFSALESORDERS"/>
+		<AggMeasure name="[Measures].[SALESQUANTITY]" column="SALESQUANTITY"/>
+		<AggMeasure name="[Measures].[COSTOFGOODSSOLD]" column="COSTOFGOODSSOLD"/>
+		<AggMeasure name="[Measures].[REVENUE]" column="REVENUE"/>
+		<AggMeasure name="[Measures].[DISCOUNT]" column="DISCOUNT"/>
+		<AggLevel name="[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO]" column="PRODUCTCATEGORYNO" collapsed="false"/>
+		<AggLevel name="[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO]" column="CUSTOMER_NO" collapsed="false"/>
+		<AggLevel name="[TIMEDIM.TIMEHIERARCHY].[YEAR]" column="YEAR" collapsed="true"/>
+		<AggLevel  name="[TIMEDIM.TIMEHIERARCHY].[MONTH]" column="MONTH" collapsed="true"/>
+	  </AggName>
+	</Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="PRODUCT_NO" highCardinality="false" name="PRODDIM">
+      <Hierarchy name="PRODUCTHIERARCHY" primaryKey="PRODUCT_NO" visible="true" hasAll="true">
+        <Table name="WI2_WOW167_PRODDIM" schema="DB_2631257"/>
+        <Level name="DIVISIONNO" visible="true" column="DIVISIONNO" nameColumn="DEVISIONDESCRIPTION" type="String" levelType="Regular" hideMemberIf="Never" uniqueMembers="false"/>
+        <Level name="PRODUCTCATEGORYNO" visible="true" column="PRODUCTCATEGORYNO" nameColumn="PRODUCTCATEGORYDESCRIPTION" type="String" levelType="Regular" hideMemberIf="Never" uniqueMembers="true"/>
+		<Level name="PRODUCT_NO" visible="true" column="PRODUCT_NO" nameColumn="PRODUCTDESCRIPTION" type="String" levelType="Regular" hideMemberIf="Never" uniqueMembers="false"/>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="CUSTOMER_NO" highCardinality="false" name="CUSTDIM">
+      <Hierarchy name="CUSTOMERHIERARCHY" primaryKey="CUSTOMER_NO" visible="true" hasAll="true">
+        <Table name="WI2_WOW167_CUSTDIM" schema="DB_2631257"/>
+        <Level name="COUNTRYID" visible="true" column="COUNTRYID" type="String" levelType="Regular" hideMemberIf="Never" uniqueMembers="false"/>
+        <Level name="SALESORGNO" visible="true" column="SALESORGNO" type="String" nameColumn="SALESORGDESCRIPTION" levelType="Regular" hideMemberIf="Never" uniqueMembers="false"/>
+		<Level name="CITYNAME" visible="true" column="CITYNAME" type="String" levelType="Regular" hideMemberIf="Never" uniqueMembers="false"/>
+		<Level name="CUSTOMER_NO" visible="true" column="CUSTOMER_NO" type="String" nameColumn="CUSTOMERDESCRIPTION" levelType="Regular" hideMemberIf="Never" uniqueMembers="true"/>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="TimeDimension" visible="true" highCardinality="false" name="TIMEDIM">
+      <Hierarchy name="TIMEHIERARCHY" visible="true" hasAll="true">
+        <Level name="YEAR" visible="true" column="TIME_NO" type="Numeric" levelType="TimeYears" hideMemberIf="Never" uniqueMembers="false">
+          <KeyExpression>
+            <SQL dialect="generic">EXTRACT(YEAR FROM TIME_NO)</SQL>
+          </KeyExpression>
+        </Level>
+        <Level name="MONTH" visible="true" column="TIME_NO" type="Numeric" levelType="TimeMonths" hideMemberIf="Never" uniqueMembers="false">
+          <KeyExpression>
+            <SQL dialect="generic">EXTRACT(MONTH FROM TIME_NO)</SQL>
+          </KeyExpression>
+        </Level>
+        <Level name="DAY" visible="true" column="TIME_NO" type="Numeric" levelType="TimeDays" hideMemberIf="Never" uniqueMembers="false">
+          <KeyExpression>
+            <SQL dialect="generic">EXTRACT(DAY FROM TIME_NO)</SQL>
+          </KeyExpression>
+        </Level>
+      </Hierarchy>
+    </Dimension>
+	<Measure name="NOOFSALESORDERS" column="NOOFSALESORDERS" aggregator="sum" visible="true"/>
+	<Measure name="SALESQUANTITY" column="SALESQUANTITY" aggregator="sum" visible="true"/>
+	<Measure name="COSTOFGOODSSOLD" column="COSTOFGOODSSOLD" aggregator="sum" visible="true"/>
+	<Measure name="REVENUE" column="REVENUE" aggregator="sum" visible="true"/>
+	<Measure name="DISCOUNT" column="DISCOUNT" aggregator="sum" visible="true"/>
+  </Cube>
+</Schema>

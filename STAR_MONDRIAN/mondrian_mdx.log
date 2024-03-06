@@ -1,0 +1,288 @@
+2023-05-12 09:36:24,476 DEBUG [mondrian.mdx] 71: with set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as '{[TIMEDIM.TIMEHIERARCHY].[YEAR].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[COSTOFGOODSSOLD], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:36:25,097 DEBUG [mondrian.mdx] 71: exec: 620 ms
+2023-05-12 09:36:30,908 DEBUG [mondrian.mdx] 156: with set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as 'Hierarchize({{[TIMEDIM.TIMEHIERARCHY].[YEAR].Members}, {[TIMEDIM.TIMEHIERARCHY].[MONTH].Members}})'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[COSTOFGOODSSOLD], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:36:31,013 DEBUG [mondrian.mdx] 156: exec: 105 ms
+2023-05-12 09:38:16,739 DEBUG [mondrian.mdx] 228: with set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:38:17,132 DEBUG [mondrian.mdx] 228: exec: 393 ms
+2023-05-12 09:38:23,056 DEBUG [mondrian.mdx] 291: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[YEAR].Members}'
+  set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 09:38:23,132 DEBUG [mondrian.mdx] 291: exec: 76 ms
+2023-05-12 09:38:25,966 DEBUG [mondrian.mdx] 353: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[MONTH].Members}'
+  set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 09:38:26,143 DEBUG [mondrian.mdx] 353: exec: 177 ms
+2023-05-12 09:38:31,286 DEBUG [mondrian.mdx] 421: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[MONTH].Members}'
+  set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[COSTOFGOODSSOLD]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 09:38:31,378 DEBUG [mondrian.mdx] 421: exec: 92 ms
+2023-05-12 09:38:36,103 DEBUG [mondrian.mdx] 497: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[MONTH].Members}'
+  set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[COSTOFGOODSSOLD], [Measures].[REVENUE]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 09:38:36,439 DEBUG [mondrian.mdx] 497: exec: 336 ms
+2023-05-12 09:38:38,848 DEBUG [mondrian.mdx] 581: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[MONTH].Members}'
+  set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[COSTOFGOODSSOLD], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 09:38:38,997 DEBUG [mondrian.mdx] 581: exec: 149 ms
+2023-05-12 09:38:41,638 DEBUG [mondrian.mdx] 667: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[MONTH].Members}'
+  set [~ROWS_PRODDIM_PRODDIM.PRODUCTHIERARCHY] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+  set [~ROWS_CUSTDIM_CUSTDIM.CUSTOMERHIERARCHY] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[COSTOFGOODSSOLD], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY NonEmptyCrossJoin([~ROWS_PRODDIM_PRODDIM.PRODUCTHIERARCHY], [~ROWS_CUSTDIM_CUSTDIM.CUSTOMERHIERARCHY]) ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 09:38:41,679 DEBUG [mondrian.mdx] 667: exec: 41 ms
+2023-05-12 09:38:44,404 DEBUG [mondrian.mdx] 753: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[MONTH].Members}'
+  set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+  set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[COSTOFGOODSSOLD], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 09:38:44,447 DEBUG [mondrian.mdx] 753: exec: 43 ms
+2023-05-12 09:42:04,164 DEBUG [mondrian.mdx] 833: with set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+  set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+select NON EMPTY [~COLUMNS] ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:42:04,166 DEBUG [mondrian.mdx] 833: exec: 2 ms
+2023-05-12 09:42:09,703 DEBUG [mondrian.mdx] 882: with set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+  set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:42:10,065 DEBUG [mondrian.mdx] 882: exec: 362 ms
+2023-05-12 09:42:12,123 DEBUG [mondrian.mdx] 937: with set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+  set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:42:12,176 DEBUG [mondrian.mdx] 937: exec: 53 ms
+2023-05-12 09:42:14,876 DEBUG [mondrian.mdx] 1000: with set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+  set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:42:14,973 DEBUG [mondrian.mdx] 1000: exec: 97 ms
+2023-05-12 09:42:17,329 DEBUG [mondrian.mdx] 1071: with set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+  set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:42:17,481 DEBUG [mondrian.mdx] 1071: exec: 152 ms
+2023-05-12 09:55:29,794 DEBUG [mondrian.mdx] 1146: with set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+  set [~ROWS] as 'Hierarchize({{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}, {[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}})'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:55:30,471 DEBUG [mondrian.mdx] 1146: exec: 677 ms
+2023-05-12 09:55:37,587 DEBUG [mondrian.mdx] 1229: with set [~COLUMNS] as 'Hierarchize({{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}, {[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}})'
+  set [~ROWS] as 'Hierarchize({{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}, {[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}})'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:55:38,114 DEBUG [mondrian.mdx] 1229: exec: 527 ms
+2023-05-12 09:58:23,009 DEBUG [mondrian.mdx] 1316: with set [~ROWS] as 'Hierarchize({{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}, {[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}})'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 09:58:24,199 DEBUG [mondrian.mdx] 1316: exec: 1190 ms
+2023-05-12 10:10:57,903 DEBUG [mondrian.mdx] 1388: with set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CITYNAME].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:10:58,290 DEBUG [mondrian.mdx] 1388: exec: 385 ms
+2023-05-12 10:12:50,679 DEBUG [mondrian.mdx] 1457: with set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:12:50,681 DEBUG [mondrian.mdx] 1457: exec: 2 ms
+2023-05-12 10:13:05,501 DEBUG [mondrian.mdx] 1530: with set [~ROWS_PRODDIM_PRODDIM.PRODUCTHIERARCHY] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}'
+  set [~ROWS_CUSTDIM_CUSTDIM.CUSTOMERHIERARCHY] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY NonEmptyCrossJoin([~ROWS_PRODDIM_PRODDIM.PRODUCTHIERARCHY], [~ROWS_CUSTDIM_CUSTDIM.CUSTOMERHIERARCHY]) ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:13:05,845 DEBUG [mondrian.mdx] 1530: exec: 344 ms
+2023-05-12 10:13:11,639 DEBUG [mondrian.mdx] 1598: with set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:13:11,640 DEBUG [mondrian.mdx] 1598: exec: 1 ms
+2023-05-12 10:16:01,687 DEBUG [mondrian.mdx] 1666: with set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:16:01,690 DEBUG [mondrian.mdx] 1666: exec: 3 ms
+2023-05-12 10:16:08,106 DEBUG [mondrian.mdx] 1739: with set [~ROWS_PRODDIM_PRODDIM.PRODUCTHIERARCHY] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+  set [~ROWS_CUSTDIM_CUSTDIM.CUSTOMERHIERARCHY] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY NonEmptyCrossJoin([~ROWS_PRODDIM_PRODDIM.PRODUCTHIERARCHY], [~ROWS_CUSTDIM_CUSTDIM.CUSTOMERHIERARCHY]) ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:16:08,488 DEBUG [mondrian.mdx] 1739: exec: 382 ms
+2023-05-12 10:16:40,162 DEBUG [mondrian.mdx] 1807: with set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:16:40,164 DEBUG [mondrian.mdx] 1807: exec: 2 ms
+2023-05-12 10:17:19,887 DEBUG [mondrian.mdx] 1875: with set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[COUNTRYID].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:17:20,288 DEBUG [mondrian.mdx] 1875: exec: 400 ms
+2023-05-12 10:17:55,325 DEBUG [mondrian.mdx] 1943: with set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:17:55,329 DEBUG [mondrian.mdx] 1943: exec: 4 ms
+2023-05-12 10:18:54,892 DEBUG [mondrian.mdx] 2011: with set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:18:54,893 DEBUG [mondrian.mdx] 2011: exec: 1 ms
+2023-05-12 10:18:59,957 DEBUG [mondrian.mdx] 2084: with set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}'
+  set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:19:01,091 DEBUG [mondrian.mdx] 2084: exec: 1133 ms
+2023-05-12 10:22:28,449 DEBUG [mondrian.mdx] 2163: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[DAY].Members}'
+  set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}'
+  set [~ROWS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 10:22:29,241 DEBUG [mondrian.mdx] 2163: exec: 792 ms
+2023-05-12 10:23:47,848 DEBUG [mondrian.mdx] 2244: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[DAY].Members}'
+  set [~COLUMNS] as '{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}'
+  set [~ROWS] as 'Hierarchize({{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}, {[CUSTDIM.CUSTOMERHIERARCHY].[CITYNAME].Members}})'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 10:23:47,942 DEBUG [mondrian.mdx] 2244: exec: 94 ms
+2023-05-12 10:25:54,660 DEBUG [mondrian.mdx] 2317: with set [~ROWS] as 'Hierarchize({{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}, {[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}})'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:25:54,664 DEBUG [mondrian.mdx] 2317: exec: 4 ms
+2023-05-12 10:26:19,500 DEBUG [mondrian.mdx] 2396: with set [~COLUMNS] as '{[TIMEDIM.TIMEHIERARCHY].[DAY].Members}'
+  set [~ROWS] as 'Hierarchize({{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}, {[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}})'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:26:19,869 DEBUG [mondrian.mdx] 2396: exec: 369 ms
+2023-05-12 10:26:25,196 DEBUG [mondrian.mdx] 2470: with set [~ROWS] as 'Hierarchize({{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}, {[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}})'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:26:25,198 DEBUG [mondrian.mdx] 2470: exec: 2 ms
+2023-05-12 10:26:30,426 DEBUG [mondrian.mdx] 2549: with set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}'
+  set [~ROWS] as 'Hierarchize({{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}, {[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}})'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:26:30,765 DEBUG [mondrian.mdx] 2549: exec: 339 ms
+2023-05-12 10:26:33,617 DEBUG [mondrian.mdx] 2630: with set [~COLUMNS] as 'Hierarchize({{[CUSTDIM.CUSTOMERHIERARCHY].[SALESORGNO].Members}, {[CUSTDIM.CUSTOMERHIERARCHY].[CITYNAME].Members}})'
+  set [~ROWS] as 'Hierarchize({{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}, {[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}})'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:26:33,668 DEBUG [mondrian.mdx] 2630: exec: 51 ms
+2023-05-12 10:27:15,127 DEBUG [mondrian.mdx] 2716: with set [~ROWS] as 'Hierarchize({{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}, {[PRODDIM.PRODUCTHIERARCHY].[PRODUCT_NO].Members}})'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:27:15,130 DEBUG [mondrian.mdx] 2716: exec: 3 ms
+2023-05-12 10:27:31,514 DEBUG [mondrian.mdx] 2793: with set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as '{[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:27:31,565 DEBUG [mondrian.mdx] 2793: exec: 51 ms
+2023-05-12 10:27:54,706 DEBUG [mondrian.mdx] 2868: with set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as 'Hierarchize({{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}, {[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}})'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-05-12 10:27:54,746 DEBUG [mondrian.mdx] 2868: exec: 40 ms
+2023-05-12 10:28:35,862 DEBUG [mondrian.mdx] 2951: with set [~FILTER] as '{[TIMEDIM.TIMEHIERARCHY].[DAY].Members}'
+  set [~COLUMNS] as '{[CUSTDIM.CUSTOMERHIERARCHY].[CUSTOMER_NO].Members}'
+  set [~ROWS] as 'Hierarchize({{[PRODDIM.PRODUCTHIERARCHY].[DIVISIONNO].Members}, {[PRODDIM.PRODUCTHIERARCHY].[PRODUCTCATEGORYNO].Members}})'
+select NON EMPTY Crossjoin([~COLUMNS], {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[REVENUE], [Measures].[DISCOUNT]}) ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+where [~FILTER]
+
+2023-05-12 10:28:36,340 DEBUG [mondrian.mdx] 2951: exec: 478 ms

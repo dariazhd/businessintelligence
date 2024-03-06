@@ -1,0 +1,230 @@
+2023-06-09 11:07:44,573 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=COUNTRYID_ASOF, child.class=mondrian.rolap.RolapCubeLevel
+2023-06-09 11:07:44,574 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[SALESORGNO_ASOF]
+2023-06-09 11:07:44,574 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF], status=hierUsage == null returning elementname=CUSTDIM.CUSTOMERHIERARCHY_AS_OF
+2023-06-09 11:07:44,574 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=CUSTDIM.CUSTOMERHIERARCHY_AS_OF, childname=[SALESORGNO_ASOF] returning elementname=SALESORGNO_ASOF
+2023-06-09 11:07:44,575 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=SALESORGNO_ASOF, child.class=mondrian.rolap.RolapCubeLevel
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CITYNAME_ASOF]
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF], status=hierUsage == null returning elementname=CUSTDIM.CUSTOMERHIERARCHY_AS_OF
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=CUSTDIM.CUSTOMERHIERARCHY_AS_OF, childname=[CITYNAME_ASOF] returning elementname=CITYNAME_ASOF
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=CITYNAME_ASOF, child.class=mondrian.rolap.RolapCubeLevel
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CUSTOMER_NO_ASOF]
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF], status=hierUsage == null returning elementname=CUSTDIM.CUSTOMERHIERARCHY_AS_OF
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=CUSTDIM.CUSTOMERHIERARCHY_AS_OF, childname=[CUSTOMER_NO_ASOF] returning elementname=CUSTOMER_NO_ASOF
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=CUSTOMER_NO_ASOF, child.class=mondrian.rolap.RolapCubeLevel
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[Measures].[NOOFSALESORDERS]
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[Measures] returning elementname=Measures
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=Measures, childname=[NOOFSALESORDERS] returning elementname=NOOFSALESORDERS
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=NOOFSALESORDERS, child.class=mondrian.rolap.RolapBaseCubeMeasure
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[Measures].[SALESQUANTITY]
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[Measures] returning elementname=Measures
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=Measures, childname=[SALESQUANTITY] returning elementname=SALESQUANTITY
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=SALESQUANTITY, child.class=mondrian.rolap.RolapBaseCubeMeasure
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[Measures].[COSTOFGOODSSOLD]
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[Measures] returning elementname=Measures
+2023-06-09 11:07:44,576 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=Measures, childname=[COSTOFGOODSSOLD] returning elementname=COSTOFGOODSSOLD
+2023-06-09 11:07:44,576 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=COSTOFGOODSSOLD, child.class=mondrian.rolap.RolapBaseCubeMeasure
+2023-06-09 11:07:44,577 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[Measures].[REVENUEUSD]
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[Measures] returning elementname=Measures
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=Measures, childname=[REVENUEUSD] returning elementname=REVENUEUSD
+2023-06-09 11:07:44,577 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=REVENUEUSD, child.class=mondrian.rolap.RolapBaseCubeMeasure
+2023-06-09 11:07:44,577 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[Measures].[REVENUEEUR]
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[Measures] returning elementname=Measures
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=Measures, childname=[REVENUEEUR] returning elementname=REVENUEEUR
+2023-06-09 11:07:44,577 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=REVENUEEUR, child.class=mondrian.rolap.RolapBaseCubeMeasure
+2023-06-09 11:07:44,577 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[Measures].[DISCOUNTUSD]
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[Measures] returning elementname=Measures
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=Measures, childname=[DISCOUNTUSD] returning elementname=DISCOUNTUSD
+2023-06-09 11:07:44,577 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=DISCOUNTUSD, child.class=mondrian.rolap.RolapBaseCubeMeasure
+2023-06-09 11:07:44,577 DEBUG [mondrian.olap.Util] Util.lookupCompound: parent.name=HyperCube@DirtBikes, category=unknown, names=[Measures].[NETSALESUSD]
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapCube] RolapCube.lookupChild: name=HyperCube@DirtBikes, childname=[Measures] returning elementname=Measures
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapHierarchy] HierarchyBase.lookupChild: name=Measures, childname=[NETSALESUSD] returning elementname=NETSALESUSD
+2023-06-09 11:07:44,577 DEBUG [mondrian.olap.Util] Util.lookupCompound: found child.name=NETSALESUSD, child.class=mondrian.rolap.RolapBaseCubeMeasure
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapCube] RolapCube.getUsages: name=Measures
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[PRODDIM].[#null]
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,577 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[TIMEDIM].[#null]
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapConnection] with set [~ROWS] as 'Hierarchize({{[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[COUNTRYID_ASOF].Members}, {[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[SALESORGNO_ASOF].Members}, {[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CITYNAME_ASOF].Members}, {[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CUSTOMER_NO_ASOF].Members}})'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[COSTOFGOODSSOLD], [Measures].[REVENUEUSD], [Measures].[REVENUEEUR], [Measures].[DISCOUNTUSD], [Measures].[NETSALESUSD]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-06-09 11:07:44,578 DEBUG [mondrian.mdx] 9594: with set [~ROWS] as 'Hierarchize({{[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[COUNTRYID_ASOF].Members}, {[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[SALESORGNO_ASOF].Members}, {[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CITYNAME_ASOF].Members}, {[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CUSTOMER_NO_ASOF].Members}})'
+select NON EMPTY {[Measures].[NOOFSALESORDERS], [Measures].[SALESQUANTITY], [Measures].[COSTOFGOODSSOLD], [Measures].[REVENUEUSD], [Measures].[REVENUEEUR], [Measures].[DISCOUNTUSD], [Measures].[NETSALESUSD]} ON COLUMNS,
+  NON EMPTY [~ROWS] ON ROWS
+from [HyperCube@DirtBikes]
+
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapStar] RolapStar.clearCachedAggregations: schema=Starschema, star=WI2_WOW167_SALESFACT
+2023-06-09 11:07:44,578 DEBUG [mondrian.server.monitor] ExecutionStartEvent(9594)
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapCube] RolapCube.getUsages: name=Measures
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[PRODDIM].[#null]
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[TIMEDIM].[#null]
+2023-06-09 11:07:44,578 DEBUG [mondrian.olap.ResultBase] Named set ~ROWS: starting evaluation
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapCube] RolapCube.getUsages: name=Measures
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[PRODDIM].[#null]
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,578 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[TIMEDIM].[#null]
+2023-06-09 11:07:44,578 DEBUG [mondrian.olap.ResultBase] mondrian.rolap.RolapNamedSetEvaluator@7f3ffe54: Named set ~ROWS evaluated to:
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Berlin]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Berlin].[Capital Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Bochum]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Bochum].[Fahrpott_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Frankfurt]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Frankfurt].[Airport Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Greifswald]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Greifswald].[Ostseemotorrad_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Hamburg]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Hamburg].[Alster MotorCycling_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Hamburg].[Red Light Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Hannover]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Hannover].[Cruiser Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Heidelberg]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Heidelberg].[Neckarmotorrad_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Leipzig]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Leipzig].[LMotortours_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Magdeburg]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Magdeburg].[Motodrom_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[München]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[München].[Bavaria Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Stuttgart]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[DE].[DeutschlandGesamt_2015].[Stuttgart].[Motoradland_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Boston Heights]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Boston Heights].[Beantown Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Chicago]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Chicago].[Windy City Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Detroit Lakes]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Detroit Lakes].[Motown Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Indianapolis]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Indianapolis].[Furniture City Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Miami Beach]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Miami Beach].[Peachtree Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[New York]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[New York].[Big Apple Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Texas City]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Texas City].[Philly Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Washington, D.C.]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAEast_2015].[Washington, D.C.].[DC Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAWest_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAWest_2015].[Denver City]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAWest_2015].[Denver City].[Rocky Mountain Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAWest_2015].[Los Angeles]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAWest_2015].[Los Angeles].[SoCal Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAWest_2015].[San Francisco]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAWest_2015].[San Francisco].[Silicon Valley Bikes_2015]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAWest_2015].[Seattle]
+[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[US].[USAWest_2015].[Seattle].[Northwest Bikes_2015]
+
+2023-06-09 11:07:44,580 DEBUG [mondrian.profile] NamedSet (~ROWS):
+Hierarchize(name=Hierarchize, class=class mondrian.olap.fun.HierarchizeFunDef$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[COUNTRYID_ASOF]>>, resultStyle=MUTABLE_LIST, callCount=2, callMillis=0, elementCount=104, elementSquaredCount=5408)
+    SetListCalc(name=SetListCalc, class=class mondrian.olap.fun.SetFunDef$SetListCalc, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[COUNTRYID_ASOF]>>, resultStyle=MUTABLE_LIST, callCount=2, callMillis=0, elementCount=104, elementSquaredCount=5408)
+        Sublist(name=Sublist, class=class mondrian.olap.fun.SetFunDef$SetListCalc$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[COUNTRYID_ASOF]>>, resultStyle=VALUE)
+            Members(name=Members, class=class mondrian.olap.fun.LevelMembersFunDef$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[COUNTRYID_ASOF]>>, resultStyle=MUTABLE_LIST, callCount=2, callMillis=0, elementCount=4, elementSquaredCount=8)
+                Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=LevelType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[COUNTRYID_ASOF]>, resultStyle=VALUE_NOT_NULL, value=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[COUNTRYID_ASOF], callCount=2, callMillis=0)
+        Sublist(name=Sublist, class=class mondrian.olap.fun.SetFunDef$SetListCalc$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[SALESORGNO_ASOF]>>, resultStyle=VALUE)
+            Members(name=Members, class=class mondrian.olap.fun.LevelMembersFunDef$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[SALESORGNO_ASOF]>>, resultStyle=MUTABLE_LIST, callCount=2, callMillis=0, elementCount=6, elementSquaredCount=18)
+                Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=LevelType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[SALESORGNO_ASOF]>, resultStyle=VALUE_NOT_NULL, value=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[SALESORGNO_ASOF], callCount=2, callMillis=0)
+        Sublist(name=Sublist, class=class mondrian.olap.fun.SetFunDef$SetListCalc$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CITYNAME_ASOF]>>, resultStyle=VALUE)
+            Members(name=Members, class=class mondrian.olap.fun.LevelMembersFunDef$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CITYNAME_ASOF]>>, resultStyle=MUTABLE_LIST, callCount=2, callMillis=0, elementCount=46, elementSquaredCount=1058)
+                Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=LevelType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CITYNAME_ASOF]>, resultStyle=VALUE_NOT_NULL, value=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CITYNAME_ASOF], callCount=2, callMillis=0)
+        Sublist(name=Sublist, class=class mondrian.olap.fun.SetFunDef$SetListCalc$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CUSTOMER_NO_ASOF]>>, resultStyle=VALUE)
+            Members(name=Members, class=class mondrian.olap.fun.LevelMembersFunDef$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CUSTOMER_NO_ASOF]>>, resultStyle=MUTABLE_LIST, callCount=2, callMillis=0, elementCount=48, elementSquaredCount=1152)
+                Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=LevelType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CUSTOMER_NO_ASOF]>, resultStyle=VALUE_NOT_NULL, value=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[CUSTOMER_NO_ASOF], callCount=2, callMillis=0)
+
+Query Timing (Cumulative):
+
+2023-06-09 11:07:44,580 DEBUG [mondrian.profile] Axis (COLUMNS):
+SetListCalc(name=SetListCalc, class=class mondrian.olap.fun.SetFunDef$SetListCalc, type=SetType<MemberType<member=[Measures].[NOOFSALESORDERS]>>, resultStyle=MUTABLE_LIST, callCount=2, callMillis=0, elementCount=14, elementSquaredCount=98)
+    2(name=2, class=class mondrian.olap.fun.SetFunDef$SetListCalc$2, type=MemberType<member=[Measures].[NOOFSALESORDERS]>, resultStyle=VALUE)
+        Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=MemberType<member=[Measures].[NOOFSALESORDERS]>, resultStyle=VALUE_NOT_NULL, value=[Measures].[NOOFSALESORDERS], callCount=2, callMillis=0)
+    2(name=2, class=class mondrian.olap.fun.SetFunDef$SetListCalc$2, type=MemberType<member=[Measures].[SALESQUANTITY]>, resultStyle=VALUE)
+        Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=MemberType<member=[Measures].[SALESQUANTITY]>, resultStyle=VALUE_NOT_NULL, value=[Measures].[SALESQUANTITY], callCount=2, callMillis=0)
+    2(name=2, class=class mondrian.olap.fun.SetFunDef$SetListCalc$2, type=MemberType<member=[Measures].[COSTOFGOODSSOLD]>, resultStyle=VALUE)
+        Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=MemberType<member=[Measures].[COSTOFGOODSSOLD]>, resultStyle=VALUE_NOT_NULL, value=[Measures].[COSTOFGOODSSOLD], callCount=2, callMillis=0)
+    2(name=2, class=class mondrian.olap.fun.SetFunDef$SetListCalc$2, type=MemberType<member=[Measures].[REVENUEUSD]>, resultStyle=VALUE)
+        Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=MemberType<member=[Measures].[REVENUEUSD]>, resultStyle=VALUE_NOT_NULL, value=[Measures].[REVENUEUSD], callCount=2, callMillis=0)
+    2(name=2, class=class mondrian.olap.fun.SetFunDef$SetListCalc$2, type=MemberType<member=[Measures].[REVENUEEUR]>, resultStyle=VALUE)
+        Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=MemberType<member=[Measures].[REVENUEEUR]>, resultStyle=VALUE_NOT_NULL, value=[Measures].[REVENUEEUR], callCount=2, callMillis=0)
+    2(name=2, class=class mondrian.olap.fun.SetFunDef$SetListCalc$2, type=MemberType<member=[Measures].[DISCOUNTUSD]>, resultStyle=VALUE)
+        Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=MemberType<member=[Measures].[DISCOUNTUSD]>, resultStyle=VALUE_NOT_NULL, value=[Measures].[DISCOUNTUSD], callCount=2, callMillis=0)
+    2(name=2, class=class mondrian.olap.fun.SetFunDef$SetListCalc$2, type=MemberType<member=[Measures].[NETSALESUSD]>, resultStyle=VALUE)
+        Literal(name=Literal, class=class mondrian.calc.impl.ConstantCalc, type=MemberType<member=[Measures].[NETSALESUSD]>, resultStyle=VALUE_NOT_NULL, value=[Measures].[NETSALESUSD], callCount=2, callMillis=0)
+
+Query Timing (Cumulative):
+
+2023-06-09 11:07:44,580 DEBUG [mondrian.profile] Axis (ROWS):
+~ROWS(name=~ROWS, class=class mondrian.mdx.NamedSetExpr$1, type=SetType<MemberType<level=[CUSTDIM.CUSTOMERHIERARCHY_AS_OF].[COUNTRYID_ASOF]>>, resultStyle=ITERABLE, callCount=2, callMillis=2, elementCount=104, elementSquaredCount=5408)
+
+Query Timing (Cumulative):
+
+2023-06-09 11:07:44,580 DEBUG [mondrian.rolap.RolapCube] RolapCube.getUsages: name=Measures
+2023-06-09 11:07:44,580 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[PRODDIM].[#null]
+2023-06-09 11:07:44,580 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,580 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,580 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[TIMEDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapCube] RolapCube.getUsages: name=Measures
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[PRODDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[TIMEDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapCube] RolapCube.getUsages: name=Measures
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[PRODDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[TIMEDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapCube] RolapCube.getUsages: name=Measures
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[PRODDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[TIMEDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapCube] RolapCube.getUsages: name=Measures
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[PRODDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[TIMEDIM].[#null]
+2023-06-09 11:07:44,581 DEBUG [mondrian.rolap.RolapCube] RolapCube.getUsages: name=Measures
+2023-06-09 11:07:44,582 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[PRODDIM].[#null]
+2023-06-09 11:07:44,582 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,582 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[CUSTDIM].[#null]
+2023-06-09 11:07:44,582 DEBUG [mondrian.rolap.RolapMember] RolapMember.makeUniqueName: uniqueName=[TIMEDIM].[#null]
+2023-06-09 11:07:44,584 DEBUG [mondrian.profile] QueryBody:
+
+Query Timing (Cumulative):
+
+2023-06-09 11:07:44,584 DEBUG [mondrian.olap.ResultBase] RolapResult<init>: FREE_MEMORY: 81975kb 31.51%
+2023-06-09 11:07:44,584 DEBUG [mondrian.rolap.RolapStar] RolapStar.clearCachedAggregations: schema=Starschema, star=WI2_WOW167_SALESFACT
+2023-06-09 11:07:44,584 DEBUG [mondrian.mdx] 9594: exec: 6 ms
+2023-06-09 11:07:44,584 DEBUG [mondrian.server.monitor] ExecutionInfo{executionId=9594, phaseCount=1, cellCacheRequestCount=364, cellCacheHitCount=364, cellCacheMissCount=0, cellCachePendingCount=0, sqlStatementStartCount=0, sqlStatementExecuteCount=0, sqlStatementEndCount=0, sqlStatementRowFetchCount=0, sqlStatementExecuteNanos=0, cellRequestCount=0, expCacheHitCount=0, expCacheMissCount=0}
+2023-06-09 11:07:44,584 DEBUG [mondrian.server.MondrianServerImpl] removeStatement , id=3, statements=1, connections=111
+2023-06-09 11:07:44,584 DEBUG [mondrian.server.monitor] ExecutionEndEvent(9594)
+2023-06-09 11:07:44,584 DEBUG [mondrian.server.monitor] StatementInfo{statementId=262, executeStartCount=1, executeEndCount=1, phaseCount=1, cellCacheRequestCount=364, cellCacheHitCount=364, cellCacheMissCount=0, cellCachePendingCount=0, sqlStatementStartCount=0, sqlStatementExecuteCount=0, sqlStatementEndCount=0, sqlStatementRowFetchCount=0, sqlStatementExecuteNanos=0, cellRequestCount=0}
+2023-06-09 11:07:44,584 DEBUG [mondrian.server.monitor] StatementEndEvent(262)
+2023-06-09 11:07:44,585 DEBUG [mondrian.server.MondrianServerImpl] addConnection , id=3, statements=0, connections=111
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.MondrianServerImpl] addStatement , id=3, statements=0, connections=112
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] ConnectionStartEvent(239)
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] StatementStartEvent(267)
+2023-06-09 11:07:44,586 DEBUG [mondrian.rolap.RolapSchema] Pool.get: create schema "file:/C:/Users/Daria Zhdanova/Desktop/HAW/4 Semester/WI2/Praktikum/5.Praktikum/starschema-XML.xml" using dynamic processor
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.MondrianServerImpl] removeStatement , id=3, statements=1, connections=112
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.MondrianServerImpl] addConnection , id=3, statements=0, connections=112
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] StatementInfo{statementId=267, executeStartCount=0, executeEndCount=0, phaseCount=0, cellCacheRequestCount=0, cellCacheHitCount=0, cellCacheMissCount=0, cellCachePendingCount=0, sqlStatementStartCount=0, sqlStatementExecuteCount=0, sqlStatementEndCount=0, sqlStatementRowFetchCount=0, sqlStatementExecuteNanos=0, cellRequestCount=0}
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] StatementEndEvent(267)
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] ConnectionStartEvent(239)
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.MondrianServerImpl] addConnection , id=1, statements=0, connections=0
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.MondrianServerImpl] addStatement , id=1, statements=0, connections=1
+2023-06-09 11:07:44,586 DEBUG [mondrian.rolap.RolapSchema] Pool.get: create schema "file:/C:/Users/Daria Zhdanova/Desktop/HAW/4 Semester/WI2/Praktikum/5.Praktikum/starschema-XML.xml" using dynamic processor
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] ConnectionStartEvent(240)
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] StatementStartEvent(268)
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.MondrianServerImpl] removeStatement , id=1, statements=1, connections=1
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] StatementInfo{statementId=268, executeStartCount=0, executeEndCount=0, phaseCount=0, cellCacheRequestCount=0, cellCacheHitCount=0, cellCacheMissCount=0, cellCachePendingCount=0, sqlStatementStartCount=0, sqlStatementExecuteCount=0, sqlStatementEndCount=0, sqlStatementRowFetchCount=0, sqlStatementExecuteNanos=0, cellRequestCount=0}
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.MondrianServerImpl] addConnection , id=1, statements=0, connections=1
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] StatementEndEvent(268)
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.MondrianServerImpl] removeConnection , id=1, statements=0, connections=1
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] ConnectionStartEvent(240)
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] ConnectionInfo{cellCacheHitCount=0, cellCacheRequestCount=0, cellCacheMissCount=0, cellCachePendingCount=0, statementStartCount=0, statementEndCount=0, executeStartCount=0, executeEndCount=0}
+2023-06-09 11:07:44,586 DEBUG [mondrian.server.monitor] ConnectionEndEvent(240)

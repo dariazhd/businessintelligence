@@ -1,0 +1,49 @@
+<Schema name="DB_SCH">
+	<Cube name="HyperCube@DirtBikes" description = "Cube for DirtBikes Sales Data" cache="true">
+		<View alias = "OLTP_SALES_FACTS">
+			<SQL dialect = "generic"> 
+				select * from DB_SCH.WI2_OLTP_MDORDERHEAD OH join DB_SCH.WI2_OLTP_MDORDERPOSITION OP on OH.OH_ORDERID = OP.OP_ORDERID
+			</SQL>
+		</View>
+		<Dimension type="TimeDimension" name="Time" caption="TimeDimension">
+			<Hierarchy name="TimeHierarchy" hasAll="true">
+				<Level name="Year" column="OH_ORDERDATE" type="Numeric" levelType="TimeYears">
+					<KeyExpression>
+						<SQL dialect = "generic">extract (year from OH_ORDERDATE)</SQL>
+					</KeyExpression>
+				</Level>
+				<Level name="Month" column="OH_ORDERDATE" type="Numeric" levelType="TimeMonths">
+					<KeyExpression>
+						<SQL dialect = "generic">extract (month from OH_ORDERDATE)</SQL>
+					</KeyExpression>
+				</Level>
+				<Level name="Day" column="OH_ORDERDATE" type="Numeric" levelType="TimeDays">
+					<KeyExpression>
+						<SQL dialect = "generic">extract (day from OH_ORDERDATE)</SQL>
+					</KeyExpression>
+				</Level>
+			</Hierarchy>
+		</Dimension>
+		<Dimension type="StandardDimension" name="Product" foreignKey="OP_PRODUCTID">
+			<Hierarchy name="ProductHierarchy" hasAll="true" primaryKey="MDPRODUCTNO">
+				<Table name="WI2_OLTP_MDPRODUCT" schema="DB_SCH"/>
+					<Level name="ProductDivision" column="MDDIVISIONNO" nameColumn="MDDIVISIONDESCRIPTION" type="String"/>
+					<Level name="ProductCategory" column="MDPRODUCTCATEGORYNO" nameColumn="MDPRODUCTCATEGORYDESCRIPTION" type="String"/>
+					<Level name="Product" column="MDPRODUCTNO" nameColumn="MDPRODUCTDESCRIPTION" type="String"/>
+			</Hierarchy>
+		</Dimension>
+		<Dimension type="StandardDimension" name="Customer" foreignKey="OH_CUSTOMERID">
+			<Hierarchy name="CustomerHierarchy" hasAll="true"  primaryKey="MDCUSTOMERNO">
+				<Table name="WI2_OLTP_MDCUSTOMER" schema="DB_SCH"/>
+					<Level name="Country" column="MDCOUNTRYID" type="String"/>
+					<Level name="SalesOrg" column="MDSALESORGNO" nameColumn="MDSALESORGDESCRIPTION"/>
+					<Level name="City" column="MDCITYNAME"/>
+					<Level name="Customer" column="MDCUSTOMERNO" nameColumn="MDCUSTOMERDESCRIPTION" type="String"/>
+			 </Hierarchy>
+		</Dimension>
+		<Measure name="CoGMUSD" column="OP_COGMUSD" aggregator="sum" formatString="#,###.00"/>
+		<Measure name="DiscountUSD" column="OP_DISCOUNTUSD" aggregator="sum" formatString="#,###.00"/>
+		<Measure name="RevenueUSD" column="OP_REVENUEUSD" aggregator="sum" formatString="#,###.00"/>
+		<Measure name="SalesQuantity" column="OP_SALESQUANTITY" aggregator="sum"/>
+	</Cube>
+</Schema>
